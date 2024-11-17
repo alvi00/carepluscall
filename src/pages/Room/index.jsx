@@ -14,7 +14,7 @@ const Roompage = () => {
             sharedLinks:[
                 {
                     name:'Copy Link',
-                    url:`http://localhost:3000/room/${roomId}`
+                    url:`https://carepluscall.vercel.app/room/Careplus`
                 }
             ],
             scenario: {
