@@ -1,0 +1,212 @@
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+/* Home Page Layout */
+.home-page {
+    background-color: #121212; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 40px;
+    padding: 20px;
+}
+
+
+
+/* Left Section (Form) */
+.form-container {
+    background-color: #1e1e1e; /* Dark card background */
+    padding: 60px; /* Reduce padding for smaller screens */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.form-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #007bff; /* Highlight border */
+}
+
+.form-button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.form-button:active {
+    transform: scale(0.95);
+}
+
+/* Right Section (Lottie Animation) */
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+    margin-left: 150px;
+}
+
+.right-section iframe {
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #121212; 
+        color: #e0e0e0; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .home-page {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .right-section {
+        margin-left: 0;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 40px;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .right-section iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 30px;
+    }
+
+    .form-title {
+        font-size: 1.2rem;
+    }
+
+    .form-button {
+        font-size: 0.9rem;
+    }
+}
+/* General RoomPage Styling */
+.room-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #121212; /* Dark background for consistency */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Room Container */
+.room-container {
+    width: 100%;
+    max-width: 900px; /* Limit max width for larger screens */
+    height: 90%;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    background-color: #1e1e1e; /* Dark card background */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .room-container {
+        height: 100%; /* Use full height for smaller screens */
+        width: 100%;
+        border-radius: 0; /* Remove border radius for cleaner look */
+    }
+
+    .room-page {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .room-container {
+        height: 100%;
+        width: 100%;
+    }
+}
